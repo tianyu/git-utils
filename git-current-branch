@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+ref=$(git symbolic-ref HEAD 2> /dev/null) || exit
+echo "${ref#refs/heads/}"
